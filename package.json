@@ -1,0 +1,17 @@
+{
+  "name": "language-protosnirk",
+  "main": "./lib/language-protosnirk",
+  "version": "0.0.1",
+  "description": "Langauge support for protosnirk",
+  "keywords": [
+  ],
+  "activationCommands": {
+  },
+  "repository": "https://github.com/snirkimmington/atom-language-protosnirk",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

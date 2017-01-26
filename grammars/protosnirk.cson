@@ -1,0 +1,80 @@
+'name': 'Protosnirk'
+'scopeName': 'source.protosnirk'
+'fileTypes': [
+    'protosnirk'
+]
+
+'patterns': [
+    { 'include': '#line_doc_comment' }
+    { 'include': '#line_comment' }
+    { 'include': '#annotation' }
+    { 'include': '#keyword_variable' }
+    { 'include': '#keyword_control' }
+    { 'include': '#keyword_declaration' }
+    { 'include': '#keyword_other'}
+    { 'include': '#constants'}
+    { 'include': '#builtin_type' }
+    { 'include': '#parameter' }
+    { 'include': '#type_parameter' }
+    { 'include': '#identifier' }
+    { 'include': '#type' }
+]
+
+'repository': {
+    'line_doc_comment': {
+        'name': 'comment.line.documentation.protosnirk'
+        'begin': '//[!/](?=[^/])'
+        'end': '$'
+    }
+    'line_comment': {
+        'name': 'comment.line.double-slash.protosnirk'
+        'begin': '//'
+        'end': '$'
+    }
+    'keyword_variable': {
+        'name': 'keyword.control.protosnirk'
+        'match': '\\b(let|mut|const|static|provided|get|set|owned|shared|ref|self|type)\\b'
+    }
+    'keyword_control': {
+        'name': 'keyword.control.protosnirk'
+        'match': '\\b(return|break|continue|yield|if|else|match|for|while|do|with|is|in)\\b'
+    }
+    'keyword_declaration': {
+        'name': 'keyword.control.protosnirk'
+        'match': '\\b(use|import|public|struct|class|fn|trait|provider)\\b'
+    }
+    'builtin_type': {
+        'name': 'keyword.other.protosnirk'
+        'match': '\\b(bool|int|uint|int8|int16|int64|uint8|uint32|uint64|float|float64)\\b'
+    }
+    'keyword_other': {
+        'name': 'keyword.other.protosnirk'
+        'match': '\\b(or|and|not|bitand|bitor|bitxor|bitnot)\\b'
+    }
+    'identifier': {
+        'name': 'source.protosnirk' # Keep them basic
+        'match': '\\b[a-z_][a-zA-Z0-9_]*\\b'
+
+    }
+    'type': {
+        'name': 'entity.name.type.protosnirk'
+        'match': '\\b[A-Z][a-zA-Z0-9_]*\\b'
+    }
+    'parameter': {
+        'name': 'variable.parameter.protosnirk'
+        'match': '\\b[a-z_][a-z0-9_]*:'
+    }
+    'type_parameter': {
+        'name': 'entity.name.section.protosnirk'
+        'match': '\\b[A-Z][a-zA-Z0-9_]*:'
+    }
+    'annotation': {
+        'name': 'comment.line.documentation.protosnirk'
+        'begin': '#'
+        'end': '$'
+    }
+    'constants': {
+        'name': 'constant.language.protosnirk'
+        'match': '\\b(true|false)\\b'
+    }
+}

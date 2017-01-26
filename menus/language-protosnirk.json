@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle language-protosnirk",
+        "command": "language-protosnirk:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "language-protosnirk",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "language-protosnirk:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
