@@ -37,11 +37,11 @@
     }
     'keyword_control': {
         'name': 'keyword.control.protosnirk'
-        'match': '\\b(return|break|continue|yield|if|else|match|for|while|do|with|is|in)\\b'
+        'match': '\\b(return|break|continue|yield|if|else|match|for|while|do|with|is)\\b'
     }
     'keyword_declaration': {
         'name': 'keyword.control.protosnirk'
-        'match': '\\b(use|import|public|struct|class|trait|enum|fn|strong|weak)\\b'
+        'match': '\\b(use|import|public|struct|class|trait|enum|fn|strong|weak|owned|owner)\\b'
     }
     'builtin_type': {
         'name': 'keyword.other.protosnirk'
@@ -49,7 +49,7 @@
     }
     'keyword_other': {
         'name': 'keyword.other.protosnirk'
-        'match': '\\b(or|and|not|bitand|bitor|bitxor|bitnot)\\b'
+        'match': '\\b(or|and|not|bitand|bitor|bitxor|bitnot|sameas|in)\\b'
     }
     'identifier': {
         'name': 'source.protosnirk' # Keep them basic
