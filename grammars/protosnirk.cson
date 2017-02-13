@@ -41,7 +41,7 @@
     }
     'keyword_declaration': {
         'name': 'keyword.control.protosnirk'
-        'match': '\\b(use|import|public|struct|class|trait|enum|fn|strong|weak|owned|owner)\\b'
+        'match': '\\b(use|import|uses|public|struct|class|trait|enum|fn|strong|weak|owned|owner)\\b'
     }
     'builtin_type': {
         'name': 'keyword.other.protosnirk'
