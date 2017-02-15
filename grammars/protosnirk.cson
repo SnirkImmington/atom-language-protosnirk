@@ -16,6 +16,7 @@
     { 'include': '#builtin_type' }
     { 'include': '#parameter' }
     { 'include': '#type_parameter' }
+    { 'include': '#macro_invoke' }
     { 'include': '#identifier' }
     { 'include': '#type' }
 ]
@@ -65,8 +66,12 @@
         'match': '\\b[a-z_][a-z0-9_]*:'
     }
     'type_parameter': {
-        'name': 'entity.name.section.protosnirk'
+        'name': 'variable.parameter.protosnirk'
         'match': '\\b[A-Z][a-zA-Z0-9_]*:'
+    }
+    'macro_invoke': {
+        'name': 'entity.name.section.protosnirk'
+        'match': '\\b[_a-zA-Z][a-zA-Z1-9_]*!'
     }
     'annotation': {
         'name': 'comment.line.documentation.protosnirk'
