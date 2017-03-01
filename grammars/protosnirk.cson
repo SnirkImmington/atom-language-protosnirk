@@ -34,7 +34,7 @@
     }
     'keyword_variable': {
         'name': 'keyword.control.protosnirk'
-        'match': '\\b(let|mut|const|static|provided|get|set|owned|shared|ref|self|typedef)\\b'
+        'match': '\\b(let|mut|const|static|provided|get|set|owned|shared|ref|self|typedef|default|extern)\\b'
     }
     'keyword_control': {
         'name': 'keyword.control.protosnirk'
